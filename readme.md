@@ -2,8 +2,8 @@ A stylesheet I made that i definatly didnt steal the idea for
 
 # import
 ```css
-@import url("https://style.roxcelic.love/crimtane/styles.css");
-@import url("https://style.roxcelic.love/crimtane/light.css");
+@import url("https://style.roxcelic.love/styles.css");
+@import url("https://style.roxcelic.love/light.css");
 ```
 # dynamic js import
 ```html
