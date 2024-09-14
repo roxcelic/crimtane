@@ -1,0 +1,14 @@
+{
+  "name": "scss-to-css-project",
+  "version": "1.0.0",
+  "scripts": {
+    "main": "sass src/main.scss dist/styles.css --style=compressed",
+    "light": "sass src/light.scss dist/light.css --style=compressed",
+
+    "dev": "sass src/main.scss dist/styles.css --style=compressed",
+    "test": "sass src/light.scss ../blog/public/styles.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0"
+  }
+}

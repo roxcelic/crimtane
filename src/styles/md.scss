@@ -1,0 +1,84 @@
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    border-left: 4px solid $border-color;
+    padding: 0.5em 1em;
+    color: $highlight-code;
+    background-color: $codebox-background-color;
+    margin: 1em 0;
+}
+
+.astro-code{
+    background-color: $codebox-background-color !important;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    background-color: $codebox-background-color;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: $codebox-background-color;
+    padding: 1em;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid $border-color;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+th {
+    background-color: $codebox-background-color;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid $border-color;
+    margin: 2em 0;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: $highlight;
+    color: $highlight-code;
+}

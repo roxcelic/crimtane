@@ -1,0 +1,10 @@
+main {
+    width: 80%;
+    padding-left: 0;
+    margin: auto auto;
+}
+@media (pointer: coarse) {
+    main {
+        width: 95%;
+    }
+}
