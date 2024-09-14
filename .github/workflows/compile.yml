@@ -34,6 +34,7 @@ jobs:
         run: | 
           pnpm run main
           pnpm run light
+          pnpm run generate-import
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5

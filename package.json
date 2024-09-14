@@ -4,6 +4,7 @@
   "scripts": {
     "main": "sass src/main.scss dist/styles.css --style=compressed",
     "light": "sass src/light.scss dist/light.css --style=compressed",
+    "generate-import": "node src/js/generate-import.js",
 
     "dev": "sass src/main.scss dist/styles.css --style=compressed",
     "test": "sass src/light.scss ../blog/public/styles.css --style=compressed"
