@@ -3,7 +3,7 @@ name: Compile and publish
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [V2]
 
 permissions:
   contents: read
@@ -31,8 +31,9 @@ jobs:
           pnpm install
 
       - name: Compile SCSS
-        run: pnpm run main
-        run: pnpm run light
+        run: | 
+          pnpm run main
+          pnpm run light
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
