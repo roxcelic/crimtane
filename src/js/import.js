@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const darkThemeUrl = "https://roxcelic.github.io/crimtane/styles.css";
-    const lightThemeUrl = "https://roxcelic.github.io/crimtane/light.css";
+    const darkThemeUrl = "https://style.roxcelic.love/styles.css";
+    const lightThemeUrl = "https://style.roxcelic.love/light.css";
     
     const linkElement = document.createElement("link");
     linkElement.rel = "stylesheet";
