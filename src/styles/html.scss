@@ -9,6 +9,8 @@ html {
     font-optical-sizing: auto;
     font-weight: 10;
     font-style: normal;
+
+    transition: $main-transition;
 }
 
 html *{
@@ -23,13 +25,10 @@ body {
 h1, h2, h3, h4, h5, h6{
     padding: $heading-padding;
     color: $heading-text-color;
-    width: 100%;
 }
 
 p {
-    padding: $heading-padding;
     color: $main-text-color;
-    width: 100%;
 }
 
 #center {
