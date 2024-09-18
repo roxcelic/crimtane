@@ -28,7 +28,7 @@ blockquote {
     background-color: $codebox-background-color !important;
 }
 
-code {
+code, astro-code {
     font-family: 'Courier New', monospace;
     background-color: $codebox-background-color;
     padding: 0.2em 0.4em;
