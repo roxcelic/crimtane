@@ -28,10 +28,9 @@ blockquote {
     background-color: $codebox-background-color !important;
 }
 
-code {
-    margin: 5px;
+code, .astro-code {
     font-family: 'Courier New', monospace;
-    background-color: $codebox-background-color;
+    background-color: $codebox-background-color !important;
     padding: 2px;
     border-radius: 4px;
 }
