@@ -1,0 +1,32 @@
+$test: black;
+    
+//html base colors
+$page-background-color: rgb(0, 12, 44);
+$main-text-color: rgb(178, 176, 176);
+$heading-text-color: rgb(245, 94, 0);
+
+//markdown base colors
+$codebox-background-color: rgb(208, 3, 92);
+$hr-line-color: rgb(255, 0, 85);
+
+$border-color: #000000;
+$highlight-code: #000000;
+$highlight: rgb(0, 0, 0);
+
+//transitions
+$main-transition: all ease-in-out 0.3s;
+
+//scroll
+$scroll: orange;
+$scroll-background: rgb(0, 213, 233);
+
+//links
+$link-color: rgb(0, 179, 203);
+
+//sizes
+$small: 4px;
+$medium: 8px;
+$large: 16px;
+$Xlarge: 24px;
+$Xxlarge: 32px;
+$heading-padding: 10px;
