@@ -1,11 +1,20 @@
 const fs = require('fs');
 const path = require('path');
+
 const sourceImportJsPath = path.join(__dirname, 'import.js');
+const distImportJsPath = path.join(distDir, 'import.js');
+const sourceScriptJsPath = path.join(__dirname, 'script.js');
+const distScriptJsPath = path.join(distDir, 'script.js');
 const distDir = 'dist';
-const distImportJsPath = path.join(distDir, 'import.js'); 
+
 if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir);
 }
-const importContent = fs.readFileSync(sourceImportJsPath, 'utf8');
+
+let importContent = fs.readFileSync(sourceImportJsPath, 'utf8');
 fs.writeFileSync(distImportJsPath, importContent, 'utf8');
-console.log('import.js has been copied to the dist folder');
+
+importContent = fs.readFileSync(sourceScriptJsPath, 'utf8');
+fs.writeFileSync(distScriptJsPath, importContent, 'utf8');
+
+console.log('imports has been copied to the dist folder');
