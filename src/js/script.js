@@ -146,7 +146,7 @@ async function startup() {
     canvas.height = data.height;
 
     canvas.style.backgroundColor = data.backgroundColor;
-    canvas.style.position = "absolute";
+    canvas.style.position = "fixed";
     canvas.style.display = "block";
     canvas.style.zIndex = "-10";
   
