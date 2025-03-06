@@ -15,16 +15,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // setting up the background config
-    scriptElement.src = backgroundUrl;
-        scriptElement.setAttribute("speed", 1);
+    scriptElement.src = backgroundUrl
+        scriptElement.setAttribute("speed", 10);
         scriptElement.setAttribute("loop", 300);
-        scriptElement.setAttribute("amount", 250);
-        scriptElement.setAttribute("distance", 5);
+        scriptElement.setAttribute("amount", 150);
+        scriptElement.setAttribute("distance", 2);
         scriptElement.setAttribute("penThickness", 1);
-        scriptElement.setAttribute("reset", "true");
-        scriptElement.setAttribute("resetTime", 600);
+        scriptElement.setAttribute("reset", "false");
+        scriptElement.setAttribute("resetTime", 1000);
         scriptElement.setAttribute("backgroundColor", "black");
-        scriptElement.setAttribute("penColor", "darkred");
+        scriptElement.setAttribute("penColor", "rgb(105, 0, 46)");
         scriptElement.setAttribute("center", "false");
         scriptElement.setAttribute("name", "ah");
 
