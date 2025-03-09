@@ -22,6 +22,8 @@ button, textarea, input {
     color: $main-text-color;
     background-color: $codebox-background-color;
 
+    border: 3px solid $border-color;
+
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 10;
