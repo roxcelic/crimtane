@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const lightThemeUrl = "https://crimtane.roxcelic.love/light.css";
     const backgroundUrl = "https://crimtane.roxcelic.love/script.js";
 
-    const background = document.currentScript.getAttribute('background');
+    const scriptElement = document.querySelector('script[src="https://crimtane.roxcelic.love/import.js"]');
+    const background = scriptElement ? scriptElement.getAttribute('background') : null;
     
     const linkElement = document.createElement("link");
     linkElement.rel = "stylesheet";
