@@ -1,16 +1,15 @@
-A stylesheet I made that i definatly didnt steal the idea for
-
 # import
 ```css
 @import url("https://crimtane.roxcelic.love/styles.css");
-@import url("https://crimtane.roxcelic.love/light.css");
 ```
-# dynamic js import
+
+# background import
 ```html
-<script src="https://crimtane.roxcelic.love/import.js"></script>
+<script src="https://crimtane.roxcelic.love/script.js" speed="10" loop="300" amount="150" distance="2" penthickness="1" reset="false" resettime="1000" backgroundcolor="black" pencolor="rgb(105, 0, 46)" center="false" name="ah"></script>
 ```
+
 # credits
 * crimtane bundles a copy of [reset.css by eric meyer](//meyerweb.com/eric/tools/css/reset/)
 
-# update V2
-not much has changed but there is now a lightmode and its way more organised.
+# update V3
+Rather than scss varibles this now uses css variables for easier testing and to allow for only a single stylesheet to be imported.

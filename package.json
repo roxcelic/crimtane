@@ -1,15 +1,15 @@
 {
-  "name": "scss-to-css-project",
-  "version": "1.0.0",
+  "name": "crimtane",
+  "version": "3.0.0",
   "scripts": {
-    "deploy": "sass src/main.scss dist/styles.css --style=compressed && sass src/light.scss dist/light.css --style=compressed && node src/js/generate-import.js",
+    "deploy": "sass src/main.scss dist/styles.css --style=compressed && node src/js/generate-import.js",
 
     "main": "sass src/main.scss dist/styles.css --style=compressed",
-    "light": "sass src/light.scss dist/light.css --style=compressed",
     "generate-import": "node src/js/generate-import.js",
 
-    "dev": "sass src/main.scss dist/styles.css --style=compressed && sass src/light.scss dist/light.css --style=compressed",
-    "test": "sass src/light.scss ../web-home/public/styles.css --style=compressed"
+    "reset": "rm -r ../strawberry-pie/public/stylesheet && mkdir ../strawberry-pie/public/stylesheet",
+    "dev": "mv dist ../strawberry-pie/public/stylesheet/",
+    "test": "npm run reset && npm run deploy && npm run dev"
   },
   "devDependencies": {
     "sass": "^1.32.0"

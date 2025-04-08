@@ -1,32 +1,68 @@
-$test: black;
+:root {
+    //sizes
+    --Xsmall: 4px;
+    --small: 8px;
+    --medium: 16px;
+    --large: 32px;
+    --Xlarge: 48px;
+    --Xxlarge: 64px;
+
+    --heading-padding: 10px;
+
+    //transitions
+    --main-transition: all ease-in-out 0.3s;
+
+    // border
+    --border-radius: 13px;
+}
+
+// light mode
+@media (prefers-color-scheme: light) {
+    :root {
+        // html base colors
+        --page-background-color: #fa578e;
+        --main-text-color: white;
+        --heading-text-color: rgb(248, 0, 207);
     
-//html base colors
-$page-background-color: rgb(0, 0, 0);
-$main-text-color: rgb(178, 176, 176);
-$heading-text-color: rgb(248, 0, 207);
+        // markdown base colors
+        --codebox-background-color: #ff6200;
+        --hr-line-color: #d1d1d1;
+    
+        // border color
+        --border-color: #131c26;
+        --highlight-code: #131c26;
+        --highlight: #c00080;
+    
+        // scroll
+        --scroll: #d98ba1;
+        --scroll-background: #b0c4de;
+    
+        // links
+        --link-color: #550043;
+    }
+}
 
-//markdown base colors
-$codebox-background-color: rgb(105, 0, 46);
-$hr-line-color: rgb(163, 37, 79);
-
-$border-color: #000000;
-$highlight-code: #000000;
-$highlight: rgb(0, 0, 0);
-
-//transitions
-$main-transition: all ease-in-out 0.3s;
-
-//scroll
-$scroll: rgb(250, 157, 242);
-$scroll-background: rgb(82, 0, 0);
-
-//links
-$link-color: rgb(97, 42, 42);
-
-//sizes
-$small: 4px;
-$medium: 8px;
-$large: 16px;
-$Xlarge: 24px;
-$Xxlarge: 32px;
-$heading-padding: 10px;
+// dark mode
+@media (prefers-color-scheme: dark) {
+    :root{
+        //html base colors
+        --page-background-color: rgb(0, 0, 0);
+        --main-text-color: rgb(178, 176, 176);
+        --heading-text-color: rgb(204, 0, 112);
+    
+        //markdown base colors
+        --codebox-background-color: rgb(105, 0, 46);
+        --hr-line-color: rgb(163, 37, 79);
+    
+        --border-color: #000000;
+        --highlight-code: #000000;
+        --highlight: rgb(255, 133, 239);
+    
+        //scroll
+        --scroll: rgb(250, 157, 242);
+        --scroll-background: rgb(82, 0, 0);
+    
+        //links
+        --link-color: rgb(97, 42, 42);   
+    }
+}

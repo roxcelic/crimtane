@@ -3,17 +3,12 @@ const path = require('path');
 
 const distDir = 'dist';
 
-const sourceImportJsPath = path.join(__dirname, 'import.js');
-const distImportJsPath = path.join(distDir, 'import.js');
 const sourceScriptJsPath = path.join(__dirname, 'script.js');
 const distScriptJsPath = path.join(distDir, 'script.js');
 
 if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir);
 }
-
-let importContent = fs.readFileSync(sourceImportJsPath, 'utf8');
-fs.writeFileSync(distImportJsPath, importContent, 'utf8');
 
 importContent = fs.readFileSync(sourceScriptJsPath, 'utf8');
 fs.writeFileSync(distScriptJsPath, importContent, 'utf8');

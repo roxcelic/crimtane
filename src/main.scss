@@ -1,8 +1,10 @@
-//import statments
-@import './styles/data/variables';
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+//use statments
+@use './styles/data/_variables';
 
-@import './styles/reset.scss';
-@import './styles/html.scss';
-@import './styles/md.scss';
-@import './styles/media.scss';
+@use './styles/reset.scss';
+@use './styles/html.scss';
+@use './styles/md.scss';
+@use './styles/media.scss';
+
+// import
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');

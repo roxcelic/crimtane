@@ -2,15 +2,15 @@ html {
     padding: 0;
     margin: 0;
 
-    color: $main-text-color;
-    background-color: $page-background-color;
+    color: var(--main-text-color);
+    background-color: var(--page-background-color);
 
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 10;
+    font-weight: 300;
     font-style: normal;
 
-    transition: $main-transition;
+    transition: var(--main-transition);
 }
 
 body {
@@ -19,10 +19,10 @@ body {
 }
 
 button, textarea, input {
-    color: $main-text-color;
-    background-color: $codebox-background-color;
+    color: var(--main-text-color);
+    background-color: var(--codebox-background-color);
 
-    border: 3px solid $border-color;
+    border: 3px solid var(--border-color);
 
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -31,12 +31,12 @@ button, textarea, input {
 }
 
 h1, h2, h3, h4, h5, h6{
-    padding: $heading-padding;
-    color: $heading-text-color;
+    padding: var(--heading-padding);
+    color: var(--heading-text-color);
 }
 
 p {
-    color: $main-text-color;
+    color: var(--main-text-color);
 }
 
 #center {
@@ -53,40 +53,47 @@ p {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 13px;
-    background: $scroll;
+    background: var(--scroll);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: $scroll-background;
+    background: var(--scroll-background);
 }
 
 //link
 :link{
-    color: $link-color;
+    color: var(--link-color);
 }
 a:hover{
-    color: $link-color;
+    color: var(--link-color);
     --underline-width: 100%;
 }
 a {
     background: linear-gradient(currentColor 0 0) bottom center/ var(--underline-width, 90%) 0.1em no-repeat;
-    color: $link-color;
+    color: var(--link-color);
     text-decoration: none;
     transition: background-size 0.5s;
 }
 ::selection {
-    background: $link-color;
+    background: var(--highlight);
 }
 
 //define heading sizes
 h1 {
-    font-size: $Xxlarge;
+    font-size: var(--Xxlarge);
     margin-top: 0;
 }
-
 h2 {
-    font-size: $Xlarge;
+    font-size: var(--Xlarge);
 }
-
 h3 {
-    font-size: $large;
+    font-size: var(--large);
+}
+h4 {
+    font-size: var(--medium);
+}
+h5 {
+    font-size: var(--small);
+}
+h6 {
+    font-size: var(--Xsmall);
 }

@@ -17,26 +17,22 @@ li {
 }
 
 blockquote {
-    border-left: 4px solid $border-color;
+    border-left: 4px solid var(--border-color);
     padding: 0.5em 1em;
-    color: $highlight-code;
-    background-color: $codebox-background-color;
+    color: var(--highlight-code);
+    background-color: var(--codebox-background-color);
     margin: 1em 0;
-}
-
-.astro-code{
-    background-color: $codebox-background-color !important;
 }
 
 code, .astro-code {
     font-family: 'Courier New', monospace;
-    background-color: $codebox-background-color !important;
+    background-color: var(--codebox-background-color) !important;
     padding: 2px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 pre {
-    background-color: $codebox-background-color;
+    background-color: var(--codebox-background-color);
     padding: 1em;
     border-radius: 4px;
     overflow: auto;
@@ -56,19 +52,20 @@ table {
 }
 
 th, td {
-    border: 1px solid $border-color;
+    border: 1px solid var(--border-color);
     padding: 0.5em 1em;
     text-align: left;
 }
 
 th {
-    background-color: $codebox-background-color;
+    background-color: var(--codebox-background-color);
 }
 
 hr {
     border: 0;
-    border-top: 1px solid $border-color;
-    margin: 2em 0;
+    border-top: 1px solid var(--main-text-color);
+    width: 90%;
+    margin: 1vh auto 1vh auto;
 }
 
 del {
@@ -80,6 +77,6 @@ ins {
 }
 
 mark {
-    background-color: $highlight;
-    color: $highlight-code;
+    background-color: var(--highlight);
+    color: var(--highlight-code);
 }
